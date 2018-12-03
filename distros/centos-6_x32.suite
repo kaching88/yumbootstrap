@@ -11,11 +11,11 @@ finalize = scripts/fix_rpmdb.py
 finalize = scripts/clean_yumbootstrap.py
 
 [repositories]
-centos         = http://mirror.centos.org/centos/6/os/$basearch/
-centos-updates = http://mirror.centos.org/centos/6/updates/$basearch/
+centos         = http://mirror.centos.org/centos/6/os/i386/
+centos-updates = http://mirror.centos.org/centos/6/updates/i386/
 # typically you want the newest version
-#centos-6.0         = http://vault.centos.org/6.0/os/$basearch/
-#centos-6.0-updates = http://vault.centos.org/6.0/updates/$basearch/
+#centos-6.0         = http://vault.centos.org/6.0/os/i386/
+#centos-6.0-updates = http://vault.centos.org/6.0/updates/i386/
 
 [environment]
 #PYTHONPATH=...

@@ -1,0 +1,22 @@
+name = Fedora
+release = 21
+
+gpg_key =  gpg/RPM-GPG-KEY-fedora-21-primary
+gpg_key =  gpg/RPM-GPG-KEY-fedora-21-secondary
+
+packages = packages/${suite}.list
+
+[post_install]
+finalize = scripts/fix_rpmdb.py
+finalize = scripts/clean_yumbootstrap.py
+
+[repositories]
+fedora         = http://archives.fedoraproject.org/pub/archive/fedora/linux/releases/21/Everything/i386/os/
+fedora-updates = http://archives.fedoraproject.org/pub/archive/fedora/linux/updates/21/i386/
+
+[environment]
+#PYTHONPATH=...
+#PYTHONPATH
+#SUDO_*
+
+# vim:ft=dosini

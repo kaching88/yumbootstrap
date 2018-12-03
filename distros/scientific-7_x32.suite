@@ -11,8 +11,8 @@ finalize = scripts/fix_rpmdb.py
 finalize = scripts/clean_yumbootstrap.py
 
 [repositories]
-scientific         = http://ftp.halifax.rwth-aachen.de/scientificlinux/7x/$basearch/os/
-scientific-updates = http://ftp.halifax.rwth-aachen.de/scientificlinux/7x/$basearch/os/
+scientific         = http://ftp.halifax.rwth-aachen.de/scientificlinux/7x/i386/os/
+scientific-updates = http://ftp.halifax.rwth-aachen.de/scientificlinux/7x/i386/os/
 
 [environment]
 #PYTHONPATH=...

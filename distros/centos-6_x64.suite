@@ -1,0 +1,25 @@
+name = CentOS
+release = 6
+
+gpg_key =  gpg/RPM-GPG-KEY-CentOS-6
+gpg_key ?= gpg/RPM-GPG-KEY-CentOS-Security-6
+
+packages = packages/${suite}.list
+
+[post_install]
+finalize = scripts/fix_rpmdb.py
+finalize = scripts/clean_yumbootstrap.py
+
+[repositories]
+centos         = http://mirror.centos.org/centos/6/os/x86_64/
+centos-updates = http://mirror.centos.org/centos/6/updates/x86_64/
+# typically you want the newest version
+#centos-6.0         = http://vault.centos.org/6.0/os/x86_64/
+#centos-6.0-updates = http://vault.centos.org/6.0/updates/x86_64/
+
+[environment]
+#PYTHONPATH=...
+#PYTHONPATH
+#SUDO_*
+
+# vim:ft=dosini

@@ -10,8 +10,8 @@ finalize = scripts/fix_rpmdb.old-rpm.py
 finalize = scripts/clean_yumbootstrap.py
 
 [repositories]
-centos-5.11         = http://vault.centos.org/5.11/os/$basearch/
-centos-5.11-updates = http://vault.centos.org/5.11/updates/$basearch/
+centos-5.11         = http://vault.centos.org/5.11/os/x86_64/
+centos-5.11-updates = http://vault.centos.org/5.11/updates/x86_64/
 
 [environment]
 #PYTHONPATH=...

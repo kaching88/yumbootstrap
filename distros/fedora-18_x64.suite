@@ -1,0 +1,22 @@
+name = Fedora
+release = 18
+
+gpg_key =  gpg/RPM-GPG-KEY-fedora-18-primary
+gpg_key =  gpg/RPM-GPG-KEY-fedora-18-secondary
+
+packages = packages/${suite}.list
+
+[post_install]
+finalize = scripts/fix_rpmdb.py
+finalize = scripts/clean_yumbootstrap.py
+
+[repositories]
+fedora         = http://archives.fedoraproject.org/pub/archive/fedora/linux/releases/18/Everything/x86_64/os/
+fedora-updates = http://archives.fedoraproject.org/pub/archive/fedora/linux/updates/18/x86_64/
+
+[environment]
+#PYTHONPATH=...
+#PYTHONPATH
+#SUDO_*
+
+# vim:ft=dosini

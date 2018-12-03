@@ -1,5 +1,5 @@
 name = CentOS
-release = 4.0
+release = 4.9
 
 gpg_key =  gpg/historic/RPM-GPG-KEY-CentOS-4
 
@@ -12,8 +12,8 @@ finalize = scripts/fix_rpmdb.old-rpm.py
 finalize = scripts/clean_yumbootstrap.py
 
 [repositories]
-centos-4.0         = http://vault.centos.org/4.0/os/$basearch/
-centos-4.0-updates = http://vault.centos.org/4.0/updates/$basearch/
+centos-4.9         = http://vault.centos.org/4.9/os/i386/
+centos-4.9-updates = http://vault.centos.org/4.9/updates/i386/
 
 [environment]
 #PYTHONPATH=...

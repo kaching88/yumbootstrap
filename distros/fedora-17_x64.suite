@@ -15,7 +15,7 @@ finalize = scripts/clean_yumbootstrap.py
 #   http://archives.fedoraproject.org/pub/archive/fedora/
 # GPG keys for RPM signing can be obtained from here:
 #   https://fedoraproject.org/en/keys
-fedora = http://archives.fedoraproject.org/pub/archive/fedora/linux/releases/17/Everything/$basearch/os/
+fedora = http://archives.fedoraproject.org/pub/archive/fedora/linux/releases/17/Everything/x86_64/os/
 
 [environment]
 #PYTHONPATH=...

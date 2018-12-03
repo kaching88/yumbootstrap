@@ -11,8 +11,8 @@ finalize = scripts/fix_rpmdb.py
 finalize = scripts/clean_yumbootstrap.py
 
 [repositories]
-fedora         = http://archives.fedoraproject.org/pub/archive/fedora/linux/releases/18/Everything/$basearch/os/
-fedora-updates = http://archives.fedoraproject.org/pub/archive/fedora/linux/updates/18/$basearch/
+fedora         = http://archives.fedoraproject.org/pub/archive/fedora/linux/releases/18/Everything/i386/os/
+fedora-updates = http://archives.fedoraproject.org/pub/archive/fedora/linux/updates/18/i386/
 
 [environment]
 #PYTHONPATH=...
